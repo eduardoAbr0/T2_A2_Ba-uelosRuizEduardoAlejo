@@ -356,3 +356,113 @@ body {
         font-size: 1.8rem;
     }
 }
+
+/*---------------
+            RECUPERACION RESPONSIVO
+                ------------------*/
+
+/* --- Contenedor Principal --- */
+.recovery-container {
+    width: 100%;
+    padding: 20px;
+}
+
+/* --- Tarjeta de Recuperación --- */
+.recovery-card {
+    max-width: 420px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: var(--card-bg);
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    text-align: center; /* Centramos el texto de la tarjeta */
+}
+
+.recovery-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+}
+
+.recovery-subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+/* --- Formulario --- */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left; /* Alineamos el label a la izquierda */
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(26, 26, 26, 0.1);
+}
+
+.recovery-button {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--accent);
+    color: var(--card-bg);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.recovery-button:hover {
+    background-color: var(--accent-hover);
+}
+
+/* --- Pie de la Tarjeta --- */
+.recovery-footer {
+    text-align: center;
+    margin-top: 1.5rem;
+}
+
+.recovery-footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.recovery-footer a:hover {
+    text-decoration: underline;
+}
+
+/* --- Diseño Responsivo --- */
+@media (max-width: 480px) {
+    .recovery-card {
+        padding: 2rem 1.5rem;
+    }
+
+    .recovery-title {
+        font-size: 1.6rem;
+    }
+}
