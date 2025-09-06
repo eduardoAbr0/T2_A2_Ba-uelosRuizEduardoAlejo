@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Datos (ABCC)</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav-container">
+            <a href="index.html" class="logo">Logo</a>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="abcc.html">ABCC</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="abcc-container">
+            <h1 class="abcc-title">Gestión ABCC</h1>
+            <p class="abcc-subtitle">Agregar, buscar, actualizar y eliminar registros.</p>
+
+            <div class="form-card">
+                <h2>Agregar Nuevo Registro</h2>
+                <form class="form-add">
+                    <div class="form-group">
+                        <label for="name">Esp1</label>
+                        <input type="text" id="name" placeholder="Ej. " required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Esp2</label>
+                        <input type="email" id="email" placeholder="Ej. " required>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Esp3</label>
+                        <select id="role" required>
+                            <option value="visitante">Esp3</option>
+                            <option value="editor">Esp4</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Guardar Registro</button>
+                </form>
+            </div>
+
+            <div class="table-card">
+                <div class="table-header">
+                    <h2>Usuarios Registrados</h2>
+                    <div class="search-bar">
+                        <input type="search" placeholder="Buscar por nombre o correo...">
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Correo Electrónico</th>
+                                <th>Rol</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Carlos Sánchez</td>
+                                <td>carlos.s@correo.com</td>
+                                <td>Administrador</td>
+                                <td class="actions">
+                                    <button class="btn btn-edit">Editar</button>
+                                    <button class="btn btn-delete">Eliminar</button>
+                                </td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
